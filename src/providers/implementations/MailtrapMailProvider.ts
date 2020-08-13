@@ -11,8 +11,8 @@ export class MailtrapMailProvider implements IMailProvider {
       host: 'smtp.mailtrap.io',
       port: 2525,
       auth: {
-        user: '5106c2ec73ab76',
-        pass: '520d3c3cb922fd',
+        user: process.env.MAIL_PROVIDER_USER,
+        pass: process.env.MAIL_PROVIDER_PASS,
       },
     });
   }
